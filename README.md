@@ -1,16 +1,20 @@
-# React + Vite
+Proyecto: Buscador de personajes de Harry Potter
+Aplicación en React que permite buscar personajes del universo de Harry Potter por nombre (búsqueda en tiempo real mientras se escribe), mostrar detalles básicos y filtrar por casa, especie, estatus, etc.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Descripción:
+Esta aplicación permite a la usuaria buscar personajes de Harry Potter mediante un campo de búsqueda que realiza la consulta cada vez que la usuaria escribe (búsqueda en tiempo real). Los resultados se muestran en una lista con tarjetas que contienen nombre, casa, especie, actor y una imagen si está disponible. Al hacer clic en una tarjeta se muestra una vista con más detalles.
 
-Currently, two official plugins are available:
+Características:
+Búsqueda en tiempo real (cada tecla dispara la búsqueda).
+Debounce configurable para evitar peticiones excesivas.
+Filtrado por casa, especie y Estatus, etc.
+Vista detallada del personaje.
+Manejo de estados de carga y errores.
+Responsive y accesible.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tecnologías:
+React (Hooks)
+Fetch / Axios para peticiones HTTP
+CSS 
 
-## React Compiler
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
