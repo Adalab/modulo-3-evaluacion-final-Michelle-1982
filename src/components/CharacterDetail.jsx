@@ -7,10 +7,14 @@ const CharacterDetail = ({character}) => {
         return data ? "Vivo" : "Muerto";
     }
 
+    const fixEmptyImage = (image, name) => {
+        return image ? image : "https://placehold.co/600x400?text=" + name;
+    }
+
     return (
         <>
             <img
-                src={character.image}
+                src={fixEmptyImage(character.image, character.name)}
                 alt={`Foto de ${character.name}`}
             />
             <p>{character.name}</p>

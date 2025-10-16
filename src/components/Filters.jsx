@@ -5,22 +5,31 @@ import FilterByHouse from "./FilterByHouse";
 // 4. css si lo hay
 
 const Filters = ({ updateName, updateHouse, name, house, houses }) => {
+
+    const handleSubmit = (ev) => {
+        ev.preventDefault();
+    };
+
     return (
-        <section>
-            <h2>Filtros</h2>
+        <form onSubmit={handleSubmit}>
+            <section>
 
-            <FilterByName
-                name={name}
-                updateName={updateName}
-            />
+                <FilterByName
+                    name={name}
+                    updateName={updateName}
+                />
 
-            <FilterByHouse
-                house={house}
-                updateHouse={updateHouse}
-                houses={houses}
-            />
-               
-        </section>
+                <br/>
+
+                <FilterByHouse
+                    house={house}
+                    updateHouse={updateHouse}
+                    houses={houses}
+                />
+                
+            </section>
+
+        </form>
     )
 }
 

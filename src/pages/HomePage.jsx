@@ -3,6 +3,7 @@ import ls from "../services/localStorage";
 import getCharacters from "../services/api";
 import CharacterList from '../components/CharacterList';
 import Filters from "../components/Filters";
+import Logo from "../components/Logo";
 
 const HomePage = () => {
     const [name, setName ] = useState("");
@@ -39,6 +40,7 @@ const HomePage = () => {
 
     return (
         <>
+        <Logo />
         <Filters
                 updateName={updateName}
                 updateHouse={updateHouse}
@@ -56,6 +58,9 @@ const HomePage = () => {
                     
                 />
             </section>
+           
+
+
         </>
     )
 

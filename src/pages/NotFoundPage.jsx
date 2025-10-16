@@ -2,7 +2,7 @@ import React from 'react';
 
 const NotFoundPage = () => {
     return (
-        <h1>El personaje que buscas no existe</h1>
+        <h1>Pagina no encontrada</h1>
     );
 }
 
