@@ -1,7 +1,8 @@
-import "react";
+import React from "react";
 import { useParams, Link } from "react-router-dom";
-import ls from "../services/localstorage";
+import ls from "../services/localStorage";
 import CharacterDetail from "../components/CharacterDetail";
+
 
 const DetailPage = () => {
     const { id } = useParams();
