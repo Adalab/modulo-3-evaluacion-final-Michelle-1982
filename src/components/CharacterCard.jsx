@@ -1,6 +1,6 @@
 import "react";
 import PropTypes from "prop-types";
-
+import '../styles/charactercard.css';
 const CharacterCard = ({character}) => {
 
     const fixEmptyImage = (image, name) => {
@@ -9,12 +9,14 @@ const CharacterCard = ({character}) => {
 
     return (
         <>
-            <img
+            <img  class="card__image"
                 src={fixEmptyImage(character.image, character.name)}
                 alt={`Foto de ${character.name}`}
             />
-            <p>{character.name}</p>
-            <p>{character.species}</p>
+             <div class="card__info">
+                <h3 class="card__name">{character.name}</h3>
+                <p class="card__meta">{character.species}</p>
+             </div>
         </>
     )
 }

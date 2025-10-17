@@ -18,7 +18,7 @@ const DetailPage = () => {
                 </>
             ) : (
                 <>
-                    <p>Usuario no encontrado</p>
+                    <p>Personaje no encontrado</p>
                     <Link to="/">Volver</Link>
                 </>
 

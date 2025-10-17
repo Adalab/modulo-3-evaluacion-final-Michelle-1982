@@ -2,6 +2,7 @@ import "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import CharacterCard from "./CharacterCard";
+import '../styles/characterlist.css';
 
 const CharacterList = ({ characters, name, house }) => {
     const filteredByName = characters.filter((character) =>
@@ -17,9 +18,9 @@ const CharacterList = ({ characters, name, house }) => {
     }
 
     return (
-        <ul>
+        <ul class="cards__list">
             {filtered.map((character) => (
-                <li key={character.id}>
+                <li  class="card" key={character.id}>
                     <Link to={`/character/${character.id}`}>
                         <CharacterCard character={character} />
                     </Link>

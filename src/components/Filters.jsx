@@ -2,7 +2,7 @@ import "react";
 import PropTypes from "prop-types";
 import FilterByName from "./FilterByName";
 import FilterByHouse from "./FilterByHouse";
-// 4. css si lo hay
+import '../styles/filter.css';
 
 const Filters = ({ updateName, updateHouse, name, house, houses }) => {
 
@@ -11,7 +11,7 @@ const Filters = ({ updateName, updateHouse, name, house, houses }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form class="filters" onSubmit={handleSubmit}>
             <section>
 
                 <FilterByName

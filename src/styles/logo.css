@@ -1,0 +1,6 @@
+.page__header{ text-align:center; margin-bottom:28px; }
+.logo{ width:320px; max-width:70%; display:inline-block; }
+
+@media (max-width:640px){
+  .logo{ width:260px; }
+}
