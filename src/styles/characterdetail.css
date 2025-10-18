@@ -4,6 +4,8 @@
   display:flex;
   justify-content:center;
 }
+
+
 .detail__card{
   display:flex;
   gap:28px;
@@ -33,7 +35,6 @@
   background:#222;
 }
 
-/* Info column */
 .detail__info{
   color:var(--text);
   font-weight:700;
@@ -41,17 +42,37 @@
   flex:1 1 auto;
   padding-right:6px;
 }
+
 .detail__name{
   margin:0 0 8px 0;
   font-size:22px;
 }
+
 .detail__info p{
   margin:6px 0;
   font-size:16px;
 }
+
 .status{
   font-weight:800;
   margin-left:6px;
 }
 .status--alive{ color:#fff; }
 .detail__alt{ font-weight:600; color:var(--muted); font-size:15px; margin-top:10px; }
+
+.detail__thumb {
+  flex: 0 0 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3b2321;
+  padding: 8px;
+}
+
+.detail__image {
+  width: 220px;
+  height: 300px;
+  object-fit: cover; 
+  border-radius: 2px;
+  background-color: #222; 
+}

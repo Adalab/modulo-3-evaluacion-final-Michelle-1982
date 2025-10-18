@@ -51,7 +51,7 @@ const HomePage = () => {
                 houses={getHouses()}
             
             />
-            <h2>Personajes Harry Potter</h2>
+            
             <section class="cards">
                 <CharacterList
                     characters={characters}
