@@ -5,22 +5,29 @@
   object-fit:cover;
   background:#333;
 }
+
+
 .card__info{
   background:var(--gold);
   color:var(--text-dark);
   padding:12px 14px;
 }
+
+
 .card__name{
   margin:0;
   font-size:16px;
   font-weight:700;
 }
+
+
 .card__meta{
   margin:6px 0 0;
   font-size:13px;
   font-weight:400;
   color:var(--text-dark);
 }
+
 
 @media (max-width:640px){
     .card__image{ height:300px; }

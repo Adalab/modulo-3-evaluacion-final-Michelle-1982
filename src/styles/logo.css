@@ -4,11 +4,14 @@
   margin: 12px 0 8px;
   padding-top: 8px;
 }
+
+
 .logo{
   width: 280px;
   max-width: 60%;
   display: inline-block;
 }
+
 
 /* ajuste responsive */
 @media (max-width:640px){
